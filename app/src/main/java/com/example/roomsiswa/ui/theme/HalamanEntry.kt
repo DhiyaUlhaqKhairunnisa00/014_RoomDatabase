@@ -16,6 +16,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import com.example.roomsiswa.R
 import com.example.roomsiswa.model.DetailSiswa
+import com.example.roomsiswa.model.UIStateSiswa
 import com.example.roomsiswa.navigasi.DestinasiNavigasi
 
 object DestinasiEntry: DestinasiNavigasi {
@@ -27,7 +28,20 @@ object DestinasiEntry: DestinasiNavigasi {
 @Composable
 fun EntrySiswaScreen(){}
 
-
+@Composable
+fun EntrySiswaBody(
+    uiStateSiswa: UIStateSiswa,
+    onSiswaValueChange: (DetailSiswa) -> Unit,
+    onSaveClick: () -> Unit,
+    modifier: Modifier = Modifier
+){
+    Column (
+       verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_large)),
+        modifier = modifier.padding(dimensionResource(id = R.dimen.padding_medium))
+    ){
+        
+    }
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
