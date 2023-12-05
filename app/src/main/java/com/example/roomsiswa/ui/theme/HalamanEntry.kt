@@ -48,7 +48,10 @@ fun EntrySiswaScreen(
     Scaffold (
         modifier = modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
         topBar = {
-
+            SiswaTopAppBar(
+                title = stringResource(DestinasiEntry.titleRes),
+                canNavigateBack = true,
+                scrollBehavior = scrollBehavior
         })
     { innerPadding ->
         EntrySiswaBody(
