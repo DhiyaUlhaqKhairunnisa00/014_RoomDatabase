@@ -1,4 +1,4 @@
-package com.example.roomsiswa.ui.theme
+package com.example.roomsiswa.Halaman
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
